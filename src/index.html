@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Breedy Love</title>
+  </head>
+  <body class="pawPattern">
+    <nav
+      class="
+        flex
+        justify-between
+        py-3
+        px-6
+        sticky
+        top-0
+        z-10
+        bg-white
+        shadow-lg
+      "
+    >
+      <div class="flex justify-center items-center">
+        <img src="../static/navlogo.png" class="w-12" />
+        <h1 class="ml-1 text-xl hover:text-yellow-600">Breedy Love</h1>
+      </div>
+      <div class="items-center hidden md:flex">
+        <a href="./index.html" target="" class="mr-7 hover:text-yellow-600"
+          >Inicio</a
+        >
+        <a href="./about.html" target="" class="mr-7 hover:text-yellow-600"
+          >¿Quiénes somos?</a
+        >
+        <a href="#recomendaciones" class="mr-7 hover:text-yellow-600" target=""
+          >Recomendaciones</a
+        >
+        <a href="./perros.html" target="" class="mr-7 hover:text-yellow-600"
+          >Perros</a
+        >
+        <a href="./gatos.html" target="" class="mr-7 hover:text-yellow-600"
+          >Gatos</a
+        >
+      </div>
+      <div class="items-center flex md:hidden" id="mobileMenuButton">
+        <svg viewBox="0 0 100 80" width="25" height="25">
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+        </svg>
+      </div>
+    </nav>
+    <div
+      class="
+        hidden
+        flex flex-col
+        items-center
+        gap-y-5
+        py-5
+        bg-white
+        sticky
+        top-0
+      "
+      id="menuMobile"
+    >
+      <a href="./index.html" target="" class="text-lg hover:text-yellow-600"
+        >Inicio
+      </a>
+      <a href="#recomendaciones" target="" class="text-lg hover:text-yellow-600"
+        >Recomendaciones</a
+      >
+      <a href="./perros.html" target="" class="text-lg hover:text-yellow-600"
+        >Perros</a
+      >
+      <a href="./gatos.html" target="" class="text-lg hover:text-yellow-600"
+        >Gatos</a
+      >
+      <a href="./about.html" target="" class="text-lg hover:text-yellow-600"
+        >¿Quiénes somos?
+      </a>
+    </div>
+    <script>
+      const button = document.getElementById("mobileMenuButton");
+      const menuMobile = document.getElementById("menuMobile");
+      button.onclick = () => {
+        menuMobile.classList.toggle("hidden");
+      };
+    </script>
+    <section
+      id="inicio"
+      class="
+        hero
+        w-full
+        grid grid-cols-1
+        md:grid-cols-2
+        place-content-center
+        relative
+      "
+    >
+      <div class="self-center text-center">
+        <h1 class="text-5xl md:text-6xl tracking-wide mb-1 font-semibold">
+          Breedy Love
+        </h1>
+        <p class="text-yellow-600 font-bold text-lg md:text-xl">
+          Descubre la adecuada crianza de animales domesticos
+        </p>
+      </div>
+      <img src="../static/husky2.svg" class="justify-self-center" />
+      <div
+        class="
+          w-full
+          flex
+          justify-center
+          animate-bounce
+          absolute
+          inset-x-0
+          bottom-0
+        "
+      >
+        <img src="../static/catdown.png" alt="" />
+      </div>
+    </section>
+    <section id="recomendaciones" class="info_Section mt-12">
+      <div class="flex mb-6 w-full justify-center">
+        <img src="../static/kittyPencil.png" alt="" />
+        <h2 class="text-center text-3xl font-medium ml-1">Recomendaciones</h2>
+      </div>
+      <p class="mb-5">
+        Te queremos brindar algunas recomendaciones en base a algunos expertos
+        criadores y pensando en la salud y bienestar de un animal, las
+        recomendaciones van enfocadas en si estás:
+      </p>
+      <ul class="list-disc list-inside mb-6 font-semibold">
+        <li class="mb-1">
+          Interesado en informarte antes de adquirir un cachorro.
+        </li>
+        <li>
+          Si tienes un cachorro pero quieres consejos para cuidarlo de la mejor
+          forma posible.
+        </li>
+      </ul>
+      <p class="mb-5">
+        Empecemos primero hablando sobre consejos antes de adquirir un cachorro,
+        lo escencial es que si quieres un cachorro de raza, investigues su
+        origen y los cuidados específicos de esta, ya que tienen características
+        distintas y cuidados necesarios para que su cuido sea óptimo
+      </p>
+      <p class="mb-5">
+        Al querer adquirir un cachorro siempre lo queremos bebé, pero algunas
+        veces este deseo es una ignorancia que puede hacerle daño al cachorro
+        más de lo que creerías, ya que es escencial separar al cachorro de la
+        madre en una edad adecuada tanto para la salud del cachorro como para la
+        de sus dueños, ya que una separación temprana puede generar en un
+        cachorro conductas no deseadas que pueden generar disgusto en futuros
+        propietarios. La edad adecuada de adquirir un cachorro es a los 2 meses,
+        con vacunas y desparacitaciones incluídas en su compra, esto para
+        garantizar su salud y que a esta edad, el cachorro tiene ya una correcta
+        socialización gracias a su madre y hermanos, evitando así estrés por
+        separación, casos que muy comúnmente se dan en cachorros que han sido
+        adquiridos menores de esta edad, incluso llegando a hacer daños y morder
+        cosas que no debería, etc.
+      </p>
+      <p class="mb-5">
+        Teniendo claro esto, no es mucho lo que sigue después, saber comprarlo
+        en un buen lugar que esté asociada con grupos de la FCI oficiales, los
+        perros no deben ser baratos ni económicos, son un lujo y un trabajo, así
+        que si quieres adquirir uno ten en cuenta que debes gastar considerable
+        dinero si quieres obtenerlo de un lugar responsable y con calidad.
+      </p>
+      <p class="mb-2">Las cosas que necesita un cachorro son:</p>
+      <div class="flex justify-between items-center mb-8">
+        <ul class="list-disc list-inside flex flex-col justify-be">
+          <li class="">Juguetes</li>
+          <li class="">Cama</li>
+          <li class="">Tazones de comida y agua</li>
+          <li class="">Tiempo</li>
+          <li class="">Cepillo para peinar</li>
+          <li class="">Comida de Calidad</li>
+        </ul>
+        <div class="grid grid-cols-3 gap-y-12 gap-x-10 place-items-center">
+          <img
+            src="../static/dog/dog-bowl.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/dog/dog-food.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/dog/pet-bed.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/dog/pet-brush.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/dog/toys.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/dog/chronometer.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+        </div>
+      </div>
+
+      <p class="mb-6">
+        Tener en cuenta la comida que le brindas a tu cachorro, su tabla
+        nutricional porque hay mucho concentrado que por lo barato, lo compramos
+        pero no sabemos absolutamente nada sobre si en verdad es un buen
+        alimento para nuestro peludo, la alimentación varía en peso, tamaño y
+        etapa de vida del can, por lo tanto le recomendamos tener esto en cuenta
+        y ser consciente que, un alimento de calidad no es económico.
+      </p>
+
+      <p class="mb-2">
+        Con los gatos, pasa de forma muy similar a todo lo anterior, pero sus
+        cuidados y necesidades son distintas, ya que estos necesitan una:
+      </p>
+      <div class="flex w-full text-justify justify-between mb-8">
+        <ul class="list-disc list-inside w-1/2">
+          <li class="mb-3">Caja de arena</li>
+          <li class="mb-3">
+            Juguetes específicos para gatos( rascar y afilar sus uñas, plumas o
+            ratones)
+          </li>
+          <li class="">
+            Lugares altos dónde puedan estar ( opcional, pero esto es por
+            comodidad de ellos).
+          </li>
+        </ul>
+        <div class="grid grid-cols-2 gap-x-12 gap-y-6">
+          <img
+            src="../static/cats/cat-toy.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/cats/mouse-toy.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/cats/sandbox.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+          <img
+            src="../static/cats/wool-ball.png"
+            alt=""
+            class="transform transition duration-150 hover:scale-125"
+          />
+        </div>
+      </div>
+
+      <p>
+        Debe tener en cuenta que a diferencia de los perros, los gatos son
+        considerados una plaga por su reproducción tan rápida por lo tanto le
+        recomendamos sino tiene planes de crianza, esterilizalo para no
+        contribuir a más gatos callejeros y tener tu gatito en casa, ya que
+        ellos pueden atentar con la vida de la fauna silvestre ( iguanas,
+        pajaros etc).
+      </p>
+      <p>
+        A continuación, dejamos un video creado por
+        <a
+          href="https://www.youtube.com/channel/UCdSgT4-J2XSi658rUgG6nNg"
+          target="_blank"
+          class="font-semibold text-blue-500"
+          >Experto Animal</a
+        >, que nos explica de manera más puntual de lo que tratamos de
+        transmitir en el texto si le es mucho más cómodo para su interpretación.
+      </p>
+      <div class="flex justify-center mt-12">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/9dDemBxxulo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>

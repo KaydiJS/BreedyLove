@@ -1,0 +1,39 @@
+:root {
+  --smallYellow: #e59934;
+}
+
+body {
+  font-family: Poppins, "sans-serif";
+}
+
+.pawPattern {
+  background-image: url("../static/yellowPaws.svg");
+}
+
+.dogPattern {
+  background-image: url("../static/dogPattern.png");
+}
+
+.catPattern {
+  background-image: url("../static/catPattern.png");
+}
+
+.yellow {
+  color: var(--smallYellow);
+}
+
+.hero {
+  height: 90vh;
+}
+
+.info_Section {
+  min-width: 310px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}

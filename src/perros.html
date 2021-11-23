@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Perros</title>
+  </head>
+  <body class="dogPattern">
+    <nav
+      class="
+        flex
+        justify-between
+        py-3
+        px-6
+        sticky
+        top-0
+        z-10
+        bg-white
+        shadow-lg
+      "
+    >
+      <div class="flex justify-center items-center">
+        <img src="../static/navlogo.png" class="w-12" />
+        <h1 class="ml-1 text-xl hover:text-yellow-600">Breedy Love</h1>
+      </div>
+      <div class="items-center hidden md:flex">
+        <a href="./index.html" class="mr-7 hover:text-yellow-600">Inicio</a>
+        <a href="./about.html" class="mr-7 hover:text-yellow-600"
+          >¿Quiénes somos?</a
+        >
+        <a href="#recomendaciones" class="mr-7 hover:text-yellow-600"
+          >Recomendaciones</a
+        >
+        <a href="./perros.html" class="mr-7 hover:text-yellow-600">Perros</a>
+        <a href="./gatos.html" class="mr-7 hover:text-yellow-600">Gatos</a>
+      </div>
+      <div class="items-center flex md:hidden" id="mobileMenuButton">
+        <svg viewBox="0 0 100 80" width="25" height="25">
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+        </svg>
+      </div>
+    </nav>
+    <div
+      class="
+        hidden
+        flex flex-col
+        items-center
+        gap-y-5
+        py-5
+        bg-white
+        sticky
+        top-0
+      "
+      id="menuMobile"
+    >
+      <a href="./index.html" class="text-lg hover:text-yellow-600">Inicio </a>
+      <a href="#recomendaciones" class="text-lg hover:text-yellow-600"
+        >Recomendaciones</a
+      >
+      <a href="./perros.html" class="text-lg hover:text-yellow-600">Perros</a>
+      <a href="./gatos.html" class="text-lg hover:text-yellow-600">Gatos</a>
+      <a href="./about.html" class="text-lg hover:text-yellow-600"
+        >¿Quiénes somos?
+      </a>
+    </div>
+    <script>
+      const button = document.getElementById("mobileMenuButton");
+      const menuMobile = document.getElementById("menuMobile");
+      button.onclick = () => {
+        menuMobile.classList.toggle("hidden");
+      };
+    </script>
+    <section id="perros" class="info_Section mt-12">
+      <div class="flex w-full items-center justify-center mb-6">
+        <img src="../static/dogo.png" alt="" />
+        <h2 class="text-4xl font-semibold ml-1">Perros</h2>
+      </div>
+
+      <p class="mb-6">
+        Ya estando un poco informados puedo darle a dar a conocer 2 razas
+        maravillosas que pertenecen al grupo 5, que son perros nórdicos spitz y
+        tipo primitivo, que son conocidos por tener considerable pelaje y
+        bastante energía
+      </p>
+
+      <h3 class="text-xl font-semibold mb-4">Siberian Husky</h3>
+      <p class="mb-4">
+        El Siberian Husky o Husky siberiano es un perro de tamaño mediano,
+        caracterizado por ser hiperactivo, es un perro con una necesidad de
+        desgaste físico y es sumamente dócil con los seres humanos, por lo tanto
+        no sirven como perros guardianes.
+      </p>
+      <p class="mb-4">
+        Mudan cada 6 meses de pelo y necesitan constante cepillado.
+      </p>
+      <p class="mb-4">
+        Sus características son, pueden tener su color de ojos de cualquier
+        tipo, incluso con heterocromia, variación en varios tipos de colores de
+        pelaje y pelo áspero.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 place-items-center p-4 mb-6">
+        <img
+          src="/static/perritos1.jpeg"
+          alt=""
+          class="w-96 h-60 transform transition duration-150 hover:scale-125"
+        />
+        <img
+          src="/static/perrito2.jpeg"
+          alt=""
+          class="w-96 h-60 transform transition duration-150 hover:scale-125"
+        />
+      </div>
+      <p class="mb-4">
+        A continuación, una entrevista que se hizo para conocer un poco más
+        acerca de uno de los criadores de esta raza, que en este caso es Juan
+        Pablo Ardila de Colombia, dueño de Ardkai's siberians.
+      </p>
+
+      <div class="mb-6">
+        <p class="text-blue-500 font-semibold mb-1">
+          ¿Qué te llevo a querer criar estas razas?
+        </p>
+        <p>
+          El tener mi primer ejemplar mix, conocer la situación de esta raza en
+          el país en ese momento la cual no era la mejor y se contaban con muy
+          pocos ejemplares puros en ese momento.
+        </p>
+      </div>
+      <div class="mb-6">
+        <p class="text-blue-500 font-semibold mb-1">¿Cómo las conociste?</p>
+        <p>
+          Conocí la raza hace más de 7 años con mix, y la vine a conocer pura
+          con la página del criadero Cuna De Lobos de Argentina
+        </p>
+      </div>
+      <div class="mb-6">
+        <p class="text-blue-500 font-semibold mb-1">
+          ¿Cuánto tiempo llevas trabajando con ellas?
+        </p>
+        <p>Más de 7 años</p>
+      </div>
+      <div class="mb-6">
+        <p class="text-blue-500 font-semibold mb-1">
+          En tu caso, ¿tuviste que importar algún ejemplar para criar porque en
+          el país no había?
+        </p>
+        <p>
+          Así es, se empezó con la actual Ch.Pno Alpha(Huerta) y próximamente
+          con SD Jack Daniels(De Ochoa/Juárez)
+        </p>
+      </div>
+      <div class="mb-6">
+        <p class="text-blue-500 font-semibold mb-1">
+          ¿Qué piensas sobre las cruzas irresponsables/criaderos no certificados
+          ni personas con experiencia?
+        </p>
+        <p>
+          Realmente lo que se hace a parte de aumentar la sobrepoblación de
+          perros en el país, se hace sin control trayendo perros en su mayoría
+          enfermos o con padecimientos genéticos que seguirán reproduciendo y
+          dañando la raza
+        </p>
+      </div>
+      <div class="w-full flex justify-center mb-12">
+        <div
+          class="
+            bg-white
+            rounded-lg
+            border
+            shadow-lg
+            w-1/2
+            p-8
+            flex flex-col
+            items-center
+          "
+        >
+          <img
+            src="../static/contactardkai.jpeg"
+            alt=""
+            class="rounded-full w-44 mb-6"
+          />
+          <h5 class="text-2xl text-yellow-600">Ardkai's Siberians</h5>
+          <p class="text-gray-500 mb-6">Criadores de Siberian Husky</p>
+          <p class="text-sm text-center mb-6">
+            Ardkai´s Siberians es un proyecto joven en el cual buscamos dar a
+            conocer y criar de forma responsable la raza Siberian Husky tratando
+            de cumplir lo mas posible el estándar racial para que así nuestros
+            ejemplares tengan la mas alta calidad en cuanto a
+            estructura,temperamento y salud se refiere.
+          </p>
+          <a
+            href="https://www.facebook.com/ArdkaiKennel"
+            class="
+              bg-yellow-600
+              py-2
+              px-3
+              rounded-lg
+              text-white
+              hover:bg-yellow-400
+            "
+            >Contactar</a
+          >
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold mb-6">Pomerian</h3>
+      <p class="mb-2">
+        Si te estás planteando adquirir un perro de raza Pomerania, es
+        conveniente que te informes previamente de algunos aspectos que te
+        ayudarán a que os entendáis mejor para que vuestra convivencia sea
+        fantástica. Sus características más definidas son: Su cabeza tiene forma
+        triangular, lo que le da cierto aspecto de zorro. Las orejas son
+        pequeñas y alzadas. La cola, característica de la raza, debe curvarse
+        sobre el lomo y portarse alta y horizontal.
+      </p>
+      <p class="mb-2">
+        A continuación, mencionamos las curiosidades más significativas:
+      </p>
+      <ol class="list-inside list-decimal mb-6">
+        <li class="mb-1">
+          El Pomerania no supera los 3,5 Kg de peso y, a diferencia de lo que
+          ocurre en otras razas, las hembras pesan más que los machos (1,5 Kg de
+          media aproximadamente
+        </li>
+        <li class="mb-1">
+          Se caracteriza por tener abundante pelo de longitud media, cuyo color
+          combina una extensa gama de ocres, crema, anaranjados y marrones.
+        </li>
+        <li class="mb-1">
+          El origen del perro Pomerania se remonta al Ártico y se asocia con los
+          perros de trineo, de mayor tamaño y corpulencia. Su llegada a Europa
+          se produce a través de la región de Pomerania, ubicada al norte de
+          Polonia y Alemania. Los distintos cruces a los que fueron sometidos
+          consiguieron reducir sus dimensiones, hasta el punto de convertirse en
+          una raza muy demandada por los nobles ingleses, siendo la propia reina
+          de Inglaterra su mayor embajadora.
+        </li>
+        <li class="mb-1">
+          Pese a su debilidad por sentarse en la falda de sus propietarios y
+          dejarse trasportar en brazos, el Pomerania es un perro activo, que se
+          adapta perfectamente a los espacios pequeños y que aprecia los juegos
+          y los paseos cortos.
+        </li>
+        <li>
+          Normalmente, goza de un temperamento fuerte y protector, que le hace
+          mantener siempre una actitud de alerta que suele manifestar mediante
+          el ladrido. Su temperamento suele ser reservado y lo lleva a
+          desconfiar inicialmente de la compañía de desconocidos, aunque a
+          medida que se incrementa el contacto con éstos, su nivel de afecto y
+          cariño es inconmensurable.
+        </li>
+      </ol>
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-2
+          place-items-center
+          p-4
+          mb-12
+        "
+      >
+        <img
+          src="/static/pomerian1.jpg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+        <img
+          src="/static/pomerian2.jpg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+      </div>
+      <div class="w-full flex justify-center mb-12">
+        <div
+          class="
+            bg-white
+            rounded-lg
+            border
+            shadow-lg
+            w-1/2
+            p-8
+            flex flex-col
+            items-center
+          "
+        >
+          <img
+            src="../static/pomskingdomcontact.jpeg"
+            alt=""
+            class="rounded-full w-44 mb-6"
+          />
+          <h5 class="text-2xl text-yellow-600">Poms Kingdom</h5>
+          <p class="text-gray-500 mb-6">Criadores de Pomeriana Ruso</p>
+          <p class="text-sm text-center mb-6">
+            El criadero poms kingdom en Colombia es muy buena opción de compra,
+            debido a que importa perros de Rusia para su comercialización aquí.
+          </p>
+          <a
+            href="https://www.facebook.com/pomskingdom"
+            class="
+              bg-yellow-600
+              py-2
+              px-3
+              rounded-lg
+              text-white
+              hover:bg-yellow-400
+            "
+            >Contactar</a
+          >
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold">Alaskan Malamute</h3>
+      <p class="mb-6">
+        El Alaskan Malamute o Malamute de Alaska es un perro originario de la
+        zona ártica (Alaska, EEUU), y se trata de una de las razas más antiguas
+        y cercanas al lobo dentro de la categoría de perros de trineo y nieve.
+      </p>
+      <p class="mb-6">
+        Destaca por su aspecto corpulento y abundante y espesa capa de pelo, así
+        como por su gran tamaño y sobre todo, su gran cabeza y su expresión
+        noble.
+      </p>
+      <p class="mb-6">
+        Sus ojos son siempre castaños y su cola se enrosca por encima de su
+        lomo, características únicas de la raza. Aunque el gris es el color más
+        frecuente, también existen variedades marrones r ojizas y negras, pero
+        siempre mezcladas con blanco en pecho, cara, patas, trasero, cola y
+        orejas. Al igual que el resto de perros, el Malamute macho es más grande
+        que la hembra, llegando a medir entre 60 y 70 cm hasta la cruz y pesar
+        entre 35 y 50 kg, mientras que la hembra suele medir entre 55 y 65 cm
+        hasta la cruz y pesar de 30 a 40 kg. Ambos sexos son considerados perros
+        de gran envergadura y tamaño y son capaces de cargar con mucho peso.
+      </p>
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-2
+          place-items-center
+          p-4
+          mb-12
+        "
+      >
+        <img
+          src="/static/alaskan1.jpg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+        <img
+          src="/static/alaskan2.jpg"
+          alt=""
+          class="
+            w-86
+            h-52
+            transform
+            transition
+            duration-150
+            hover:scale-125
+            border border-black
+          "
+        />
+      </div>
+      <p class="mb-6">
+        El malamute necesita, como mínimo, dos horas al día de ejercicio,
+        preferiblemente más. Le encanta tirar, por lo que es básico un temprano
+        adiestramiento con la correa. A muchos les gusta practicar el canicross,
+        una actividad en la que corren con sus dueños, pero evita el ejercicio
+        vigoroso cuando haga calor.
+      </p>
+      <div class="w-full flex justify-center mb-12">
+        <div
+          class="
+            bg-white
+            rounded-lg
+            border
+            shadow-lg
+            w-1/2
+            p-8
+            flex flex-col
+            items-center
+          "
+        >
+          <img
+            src="../static/contactalaskan.jpeg"
+            alt=""
+            class="rounded-full w-44"
+          />
+          <h5 class="text-2xl text-yellow-600">Polekka Kasue</h5>
+          <p class="text-gray-500 mb-6">Criadores de Alaskan Malamutte</p>
+          <p class="text-sm text-center mb-6">
+            Polekka kasue es un criadero de alaskan Malamutte muy recomendado,
+            la mayoría de sus ejemplares son importados
+          </p>
+          <a
+            href="https://www.facebook.com/criadero.polekakasue"
+            class="
+              bg-yellow-600
+              py-2
+              px-3
+              rounded-lg
+              text-white
+              hover:bg-yellow-400
+            "
+            >Contactar</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

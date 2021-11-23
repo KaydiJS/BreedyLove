@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <title>Gatos</title>
+  </head>
+  <body class="catPattern">
+    <nav
+      class="
+        flex
+        justify-between
+        py-3
+        px-6
+        sticky
+        top-0
+        z-10
+        bg-white
+        shadow-lg
+      "
+    >
+      <div class="flex justify-center items-center">
+        <img src="../static/navlogo.png" class="w-12" />
+        <h1 class="ml-1 text-xl hover:text-yellow-600">Breedy Love</h1>
+      </div>
+      <div class="items-center hidden md:flex">
+        <a href="./index.html" target="" class="mr-7 hover:text-yellow-600"
+          >Inicio</a
+        >
+        <a href="./about.html" target="" class="mr-7 hover:text-yellow-600"
+          >¿Quiénes somos?</a
+        >
+        <a href="#recomendaciones" class="mr-7 hover:text-yellow-600" target=""
+          >Recomendaciones</a
+        >
+        <a href="./perros.html" target="" class="mr-7 hover:text-yellow-600"
+          >Perros</a
+        >
+        <a href="./gatos.html" target="" class="mr-7 hover:text-yellow-600"
+          >Gatos</a
+        >
+      </div>
+      <div class="items-center flex md:hidden" id="mobileMenuButton">
+        <svg viewBox="0 0 100 80" width="25" height="25">
+          <rect width="100" height="10"></rect>
+          <rect y="30" width="100" height="10"></rect>
+          <rect y="60" width="100" height="10"></rect>
+        </svg>
+      </div>
+    </nav>
+    <div
+      class="
+        hidden
+        flex flex-col
+        items-center
+        gap-y-5
+        py-5
+        bg-white
+        sticky
+        top-0
+      "
+      id="menuMobile"
+    >
+      <a href="./index.html" target="" class="text-lg hover:text-yellow-600"
+        >Inicio
+      </a>
+      <a href="#recomendaciones" target="" class="text-lg hover:text-yellow-600"
+        >Recomendaciones</a
+      >
+      <a href="./perros.html" target="" class="text-lg hover:text-yellow-600"
+        >Perros</a
+      >
+      <a href="./gatos.html" target="" class="text-lg hover:text-yellow-600"
+        >Gatos</a
+      >
+      <a href="./about.html" target="" class="text-lg hover:text-yellow-600"
+        >¿Quiénes somos?
+      </a>
+    </div>
+    <script>
+      const button = document.getElementById("mobileMenuButton");
+      const menuMobile = document.getElementById("menuMobile");
+      button.onclick = () => {
+        menuMobile.classList.toggle("hidden");
+      };
+    </script>
+    <section class="info_Section" id="gatos">
+      <div
+        class="
+          flex
+          w-full
+          justify-center
+          items-center
+          text-4xl
+          mb-6
+          font-semibold
+        "
+      >
+        <img src="../static/cato.png" alt="" class="mr-2" />
+        Gatos
+      </div>
+      <p class="mb-6">
+        Ya estando un poco informados puedo darles a conocer 2 razas
+        maravillosas de gatos que son conocidas y populares en Colombia, las
+        cuales son el Bengalí y el persa, excelentes compañeros para tu casa.
+      </p>
+      <h3 class="text-xl font-semibold mb-2">Bengalí</h3>
+      <p class="mb-6">
+        Aunque mucha gente le considera un gato salvaje que solo finge estar
+        domesticado, la raza en realidad es muy dulce y cariñosa. El bengalí se
+        apega mucho a las personas y es un fiel amigo. Como gato grande y
+        atlético, el bengalí debe correr, saltar y retozar para estar contento.
+        Es un gato curioso y vigilante.
+      </p>
+      <p class="mb-6">
+        Sus características son pelaje corto, colores de pelaje marron o seal.
+      </p>
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-3
+          place-items-center
+          p-4
+          mb-6
+        "
+      >
+        <img
+          src="/static/gato1.jpeg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+        <img
+          src="/static/gato2.jpeg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+        <img
+          src="/static/gato3.jpeg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+      </div>
+      <p class="mb-6">
+        El bengalí es un gato activo y extremadamente atlético. Si cuenta con un
+        espacio adecuado para practicar ejercicio, puede mantener su propio peso
+        sin demasiada dificultad. Es totalmente necesario que pueda correr y
+        practicar ejercicio libremente. Es fácil de asear y, de hecho, disfruta
+        con su aseo.
+      </p>
+      <p class="mb-6">
+        Nos hace felices que en nuestra entrevista escogimos a Bengal cats wild,
+        criadero de Bengali en Colombia para conocer un poco más acerca de el.
+      </p>
+      <div class="mb-6">
+        <p class="mb-2 text-blue-500 font-semibold">
+          ¿Qué te llevo a querer criar estas razas?
+        </p>
+        <p>
+          Porque amamos los felinos y la majestuosidad de los tigres, los
+          leopardos, los leones hicieron q buscáramos un gato que cumpliera con
+          todas estas características pero que a la ves fuera un gato legal de
+          tener y sea doméstico, así q el Bengali cumple con todos estos
+          requisitos
+        </p>
+      </div>
+      <div class="mb-6">
+        <p class="mb-2 text-blue-500 font-semibold">¿Cómo las conociste?</p>
+        <p>
+          La conocimos por casualidad y posteriormente nos empapamos del tema en
+          internet
+        </p>
+      </div>
+      <div class="mb-6">
+        <p class="mb-2 text-blue-500 font-semibold">
+          ¿Cuánto tiempo llevas trabajando con ellas?
+        </p>
+        <p>
+          Llevamos desde el 2016 pero ya nuestro criadero empezó en forma en el
+          2020
+        </p>
+      </div>
+      <div class="mb-6">
+        <p class="mb-2 text-blue-500 font-semibold">
+          En tu caso, ¿tuviste que importar algún ejemplar para criar porque en
+          el país no había?
+        </p>
+        <p>
+          Efectivamente, algunos de nuestros gatos fueron importados de Estados
+          Unidos, Panama y rucia, pero también algunos fueron adquiridos en
+          Colombia
+        </p>
+      </div>
+      <div class="mb-6">
+        <p class="mb-2 text-blue-500 font-semibold">
+          ¿Qué piensas sobre las cruzas irresponsables/criaderos no certificados
+          ni personas con experiencia?
+        </p>
+        <p>
+          En este trabajo siempre hay que tener Ética, nosotros vendemos
+          nuestros gatos esterilizados, esto con el fin de controlar las cruzas
+          indebidas y para q los Gatos sean felices y hagan parte de una
+          familia, el ser criador responsable es una tarea muy hermosa pero
+          también difícil, ya que se debe pagar veterinario, medicamento,
+          alimentación de excelente calidad para q los Gatos siempre estén
+          óptimos de salud, no estoy de acuerdo en la reproducción de animales
+          que no tengan un control, y menos de aquellas personas que no les
+          importa el bienestar de los animalitos independientemente si son Gatos
+          o perros. Nosotros rechazamos todo acto de maltrato animal y también
+          hacemos partícipe de denuncias sobre criaderos de dudosa procedencia.
+        </p>
+      </div>
+
+      <h3 class="text-2xl font-semibold mb-3">Maine Coon</h3>
+      <div class="mb-6">
+        <p>
+          El maine coon guarda gran parecido físico con el bosque de Noruega
+          pero, a diferencia de este, procede de Estados Unidos, concretamente,
+          del estado de Maine. Existen muchas leyendas sobre su origen, una de
+          las cuales afirma que es una mezcla entre un gato y un mapache, lo que
+          es biológicamente imposible. Los maine coon son muy amigables y
+          sociables. En caso de ser el único gato de la casa, este requiere
+          mucha atención humana. Además, es una raza muy charlatana, es decir,
+          sus arrullos y maullidos te acompañarán durante todo el día. Son muy
+          afables y tolerantes con otros animales y con los niños.
+        </p>
+      </div>
+      <p class="mb-6">
+        El peso medio de los maine coon está entre los 6 y los 8 kg. Las hembras
+        no deberían superar los 5 kg. Su cuerpo es musculoso y su pecho, ancho.
+        Además, el cuerpo debe ser alargado y con forma rectangular. Las patas
+        de los maine coon son fuertes, musculosas, bien separadas, de longitud
+        media y bien proporcionadas. Las patitas son grandes, redondas y llenas
+        de mechones de pelo. En algunos ejemplares, estos mechones son tan
+        largos que sobresalen más de 2 cm entre los dedos. La cola debería ser
+        aproximadamente tan larga como el cuerpo.
+      </p>
+      <div class="w-full flex justify-center mb-12">
+        <img src="../static/maineCoon.jpg" alt="" />
+        <div class="ml-3 flex flex-col justify-center">
+          <p>
+            Otros Nombres:
+            <span class="text-blue-500">Gato Coon, Gato Maine, Maine Shag</span>
+          </p>
+          <p>
+            Origen:
+            <span class="text-blue-500">Maine, Estados Unidos</span>
+          </p>
+        </div>
+      </div>
+      <h3 class="text-2xl mb-6">Contacta con:</h3>
+      <div class="w-full flex justify-center mb-12">
+        <div
+          class="
+            bg-white
+            rounded-lg
+            border
+            shadow-lg
+            w-1/2
+            p-8
+            flex flex-col
+            items-center
+          "
+        >
+          <img
+            src="../static/contactClaudia.jpg"
+            alt=""
+            class="rounded-full w-44 mb-6"
+          />
+          <h5 class="text-2xl text-yellow-600">Claudia Castañeda</h5>
+          <p class="text-gray-500 mb-6">Criadora de Maine Cat en Colombia</p>
+          <p class="text-sm text-center mb-6">
+            La criadora de Maine coon aquí en Colombia recomendada para adquirir
+            ejemplares de esta raza es Claudia Castañeda, dueña de muusa
+            cattery.
+          </p>
+          <a
+            href="https://www.facebook.com/muusa.cattery"
+            class="
+              bg-yellow-600
+              py-2
+              px-3
+              rounded-lg
+              text-white
+              hover:bg-yellow-400
+            "
+            >Contactar</a
+          >
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold mb-6">Savanah</h3>
+      <p class="mb-6">
+        Los gatos savannah despiertan cierta controversia. Son el resultado del
+        cruce de un gato doméstico y un serval (gato salvaje africano de tamaño
+        mediano y orejas grandes). Estos primeros cruces volvieron a
+        reproducirse y a los gatos resultantes se les denomina domésticos
+      </p>
+      <p class="mb-6">
+        La raza apareció a mediados de los ochenta y una de las organizaciones
+        de amigos de los gatos la reconoce como tal. Como estos gatos no son muy
+        comunes, es difícil generalizar sobre los rasgos de su personalidad y lo
+        predecibles que pueden ser. Algunos son muy sociables y amistosos con
+        los desconocidos y con otros gatos y con los perros, pero otros se
+        esconden, sisean y gruñen cuando ven a un desconocido. Al parecer el
+        savannah es capaz de saltar muy alto (casi dos metros y medio) desde una
+        posición de pie y aprende con rapidez. No es un gato para principiantes.
+        Es bastante grande y fuerte; muchas veces también se lo describe como
+        asertivo. Se dice que los savannah hacen una especie de gorjeo como el
+        serval o maúllan como un gato doméstico, o una mezcla de ambas cosas.
+        También bufan con intensidad.
+      </p>
+
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-2
+          place-items-center
+          p-4
+          mb-6
+        "
+      >
+        <img
+          src="/static/savannah1.jpg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+        <img
+          src="/static/savannah2.jpg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+      </div>
+      <p class="mb-6">
+        El pelaje del savannah es fácil de cuidar. Como sucede con todos los
+        gatos, esta raza necesita vacunaciones periódicas, un control
+        antiparasitario y chequeos veterinarios anuales.
+      </p>
+
+      <h3 class="text-2xl mb-3">Contacto</h3>
+      <div class="w-full flex justify-center mb-12">
+        <div
+          class="
+            bg-white
+            rounded-lg
+            border
+            shadow-lg
+            w-1/2
+            p-8
+            flex flex-col
+            items-center
+          "
+        >
+          <img
+            src="../static/contactmatias.jpeg"
+            alt=""
+            class="rounded-full w-44 mb-6"
+          />
+          <h5 class="text-2xl text-yellow-600">Matias Baena</h5>
+          <p class="text-gray-500 mb-6">Criador de Gatos y Perros</p>
+          <p class="text-sm text-center mb-6">
+            Criador de Savannah en Colombia está Matías Baenna, con ejemplares
+            F2-F3 Y F1 HP
+          </p>
+          <a
+            href="https://www.facebook.com/matias.baena"
+            class="
+              bg-yellow-600
+              py-2
+              px-3
+              rounded-lg
+              text-white
+              hover:bg-yellow-400
+            "
+            >Contactar</a
+          >
+        </div>
+      </div>
+      <h3 class="text-2xl font-semibold mb-3">Persas</h3>
+      <p class="mb-6">
+        El gato persa destaca por su pelaje largo y suave, con un manto inferior
+        denso. Pero no todos los gatos de pelo largo son persas, de hecho estos
+        gatos han de cumplir numerosos requisitos adicionales para satisfacer
+        los estándares de la raza.
+      </p>
+      <p class="mb-6">
+        El aspecto de los gatos persas está definido por 3 asociaciones de
+        criadores diferentes, que priorizan características distintas. Por regla
+        general, un gato persa ha de tener un tamaño mediano a grande. Los
+        machos pesan hasta 7 kg y las hembras, hasta 6 kg. El peso del cuerpo lo
+        soportan unas patas cortas y robustas. Los mechones de pelo entre los
+        dedos de las patitas redondas son una cualidad especialmente buscada.
+      </p>
+
+      <p class="mb-6">
+        Aparte del pelo largo, la cara de los gatos persas es típica de esta
+        raza. La cabeza redonda y ancha presenta unas orejas redondas,
+        idealmente con mechones de pelo, y una nariz muy corta. El puente de la
+        nariz debe terminar entre los ojos, este famoso stop no debe estar
+        situado por encima del párpado superior ni por debajo del párpado
+        inferior. Esto confiere a los gatos persas una apariencia muy
+        característica, aunque puede conllevar problemas de salud conocidos y ha
+        originado una fuerte crítica por parte de los criadores de persas más
+        extremistas, de los que hablaremos más adelante. Por ello, ciertos
+        criadores prefieren el estándar de cría antiguo, con una nariz larga,
+        pero que ya no coincide con el estándar actual. El gato persa se puede
+        encontrar prácticamente en todos los colores conocidos. Los unicolores
+        pueden ser: negros, blancos, rojos, azules, chocolate, lila o crema
+      </p>
+      <p class="mb-6">
+        Los gatos persas son muy tranquilos e idóneos para tenerlos como el
+        único animal en casa debido a que su necesidad de libertad está poco
+        desarollada. A estos pequeños felinos les encantan los mimos y
+        acurrucarse con sus dueños; son unos animales muy apegados.
+      </p>
+
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-2
+          place-items-center
+          p-4
+          mb-6
+        "
+      >
+        <img
+          src="/static/persa1.jpg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+        <img
+          src="/static/persa2.jpg"
+          alt=""
+          class="w-86 h-52 transform transition duration-150 hover:scale-125"
+        />
+      </div>
+      <p class="mb-6">
+        No obstante, aunque los gatos persas son animales muy equilibrados, en
+        el fondo todavía siguen siendo depredadores. Por eso, a los gatos
+        tranquilos y con poco interés por los juegos se les debe brindar la
+        oportunidad de descubrir, trepar y jugar. El interior de una casa debe
+        estar adaptado a las necesidades de los gatos que viven en ella para
+        poder mantenerlos mentalmente en forma y felices, aunque no realicen
+        ejercicios acrobáticos propiamente dichos.
+      </p>
+      <p class="mb-6">
+        Aunque el suave pelaje de los persas despierta el interés de muchos
+        amantes de los gatos, no se debe olvidar que los gatos de pelo largo
+        requieren un cuidado especial. Para evitar los nudos de pelo, los gatos
+        persas deberían peinarse exhaustivamente cada día. Una vez que el pelo
+        de estos gatos se enreda, es posible que solo pueda solucionarlo un
+        veterinario. Pero no hay que preocuparse porque, en caso necesario, el
+        pelo afeitado volverá a crecer muy pronto.
+      </p>
+      <h3 class="text-2xl mb-3">Contacto</h3>
+      <div class="w-full flex justify-center mb-12">
+        <div
+          class="
+            bg-white
+            rounded-lg
+            border
+            shadow-lg
+            w-1/2
+            p-8
+            flex flex-col
+            items-center
+          "
+        >
+          <img
+            src="../static/ebenezercontact.jpeg"
+            alt=""
+            class="rounded-full w-44 mb-6"
+          />
+          <h5 class="text-2xl text-yellow-600">Ebenezer Cats</h5>
+          <p class="text-gray-500 mb-6">Criadores de Animales Exóticos</p>
+          <p class="text-sm text-center mb-6">
+            El criador en Colombia recomendado para adquirir un ejemplar es
+            Ebenezer cats, que cuenta con ejemplares importados de USA de las
+            mejores líneas de sangre
+          </p>
+          <a
+            href="https://www.facebook.com/ebenezer.annyitrujillo.1"
+            class="
+              bg-yellow-600
+              py-2
+              px-3
+              rounded-lg
+              text-white
+              hover:bg-yellow-400
+            "
+            >Contactar</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
